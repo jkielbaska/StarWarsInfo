@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-global;
+    @apply scrollbar-thin scrollbar-thumb-dwhite scrollbar-track-dgray;
+  }
+
+  @font-face {
+    font-family: "SfDistantGalaxyOutline-xoeO";
+    src: url("/SfDistantGalaxyOutline-xoeO.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "SfDistantGalaxy-0l3d";
+    /* font-weight: 400; */
+    src: url("/SfDistantGalaxy-0l3d.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "SfDistantGalaxyAltoutlineItalic-ZJDZ";
+    /* font-weight: 400; */
+    src: url("/SfDistantGalaxyAltoutlineItalic-ZJDZ.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "DeathStar-VmWB";
+    src: url("/DeathStar-VmWB.ttf") format("truetype");
+  }
+}
+
+@layer components {
+  .div-images {
+    @apply w-60 h-80 m-2 bg-gray flex flex-col justify-center items-center rounded-md  sm:hover:bg-dgray  sm:hover:text-dwhite;
+  }
+  .div-wrapCenter {
+    @apply flex flex-wrap justify-center;
+  }
+  .namestext {
+    @apply font-serif pt-2 text-xl flex items-end text-dgray;
+  }
+  .div-cards {
+    @apply w-60 h-80 m-2 bg-gray flex flex-col justify-center items-center rounded-md  sm:hover:bg-dgray  sm:hover:text-dwhite font-serif  text-xl  text-dgray;
+  }
+  .scrollbox {
+    @apply w-5/6 max-w-2xl h-64 mb-10 pl-5 overflow-y-scroll flex flex-col font-deathstar  text-dwhite scrollbar-thin scrollbar-thumb-dwhite scrollbar-track-dgray;
+  }
+}
+/* 
+starjedidouble: "'StarJediLogoDoubleline1-z0e0'",
+starjedidouble2: "'StarJediLogoDoubleline2-5lzB'",
+starjedimono: "'StarJediLogoMonoline-6nGg'", */
