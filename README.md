@@ -29,8 +29,8 @@ If 500 error is thrown - you have to try again later, sometimes API is really sl
 If you want to reproduce this project in your code editor
 
 ```bash
-git clone https://github.com/jkielbaska/StarWarsInfo-firebase.git
-cd ./StarWarsInfo-firebase
+git clone https://github.com/jkielbaska/StarWarsInfo.git
+cd ./StarWarsInfo
 npm install
 npm run dev
 ```
