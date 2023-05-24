@@ -5,6 +5,8 @@ StarWarsInfo-firebase is a page where you can check info about "Star Wars" movie
 
 If 500 error is thrown - you have to try again later, sometimes API is really slow, and vercel throws timeout error. Sorry for that.
 
+* Please note that the repository only has three commits, as it is a clone of my private repository. I mistakenly forgot to put my API keys to the .env file, and then I wasn’t able to delete keys from commits history…
+
 ## Technologies
 
 ```typescript
