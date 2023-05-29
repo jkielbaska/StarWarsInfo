@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { TCharacter, Paginated } from "../../types/tCharacterResponse";
 
-//do poprawy
 export const PaginationButtons = ({
   isFetching,
   data,

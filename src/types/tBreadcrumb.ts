@@ -1,5 +1,5 @@
 export type TBreadcrumbItem = {
-  children?: string; //nie powinien tu być bardziej skomplikowany typ?
+  children?: string;
   href: string;
   isCurrent: boolean;
   label?: string;

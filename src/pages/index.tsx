@@ -2,19 +2,6 @@ import { NextPageWithLayout } from "../types/tNextPageLayout";
 import Link from "next/link";
 import { StormTrooper } from "../components/molecules/StormTrooper";
 
-//z docsów
-// const Page: NextPageWithLayout = () => {
-//   return <p>hello world</p>
-// }
-
-// Page.getLayout = function getLayout(page: ReactElement) {
-//   return (
-//     <Layout>
-//       <NestedLayout>{page}</NestedLayout>
-//     </Layout>
-//   )
-// }
-
 const Home: NextPageWithLayout = () => {
   return (
     <>

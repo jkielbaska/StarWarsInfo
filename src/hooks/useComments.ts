@@ -3,16 +3,13 @@ import {
   collection,
   serverTimestamp,
   onSnapshot,
-  addDoc, //when id doesn't matter
-  setDoc, //when id matters
+  addDoc,
   Timestamp,
 } from "firebase/firestore";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
-import { sortBy } from "lodash";
-//movies/movieId/comments/randomId
 
 type Comment = CommentSchemaType & { createdAt: Timestamp };
 
@@ -83,9 +80,6 @@ export const useComments = (movieId: number) => {
       return 0;
     }
   });
-
-  // const iteratees = (obj: Comment) => obj.createdAt;
-  // sortBy(comments, iteratees);
 
   return {
     isPending,

@@ -2,7 +2,6 @@ import { OurImage } from "../../components/atoms/OurImage";
 import Link from "next/link";
 import { getUrlId } from "../../utils/getUrlId";
 import { PhotoIndex } from "../../components/molecules/PhotoIndex";
-import { GetStaticProps } from "next";
 import { GetServerSideProps } from "next";
 import { MovieResponse } from "../../types/tMovieResponse";
 import { getFilms } from "../../services/api";
@@ -18,7 +17,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
 };
 
 const Films = ({
-  //////////////////
   initialData,
 }: {
   initialData: Paginated<MovieResponse[]> | undefined;

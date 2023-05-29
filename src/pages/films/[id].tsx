@@ -1,12 +1,7 @@
-import Link from "next/link";
 import { OurImage } from "../../components/atoms/OurImage";
 import { api } from "../../services/api";
 import { MovieResponse, Params } from "../../types/tMovieResponse";
-import {
-  TCharacter,
-  Paginated,
-  TCharacterId,
-} from "../../types/tCharacterResponse";
+import { TCharacter, TCharacterId } from "../../types/tCharacterResponse";
 import { GetStaticPaths } from "next";
 import { getCharacterById } from "../../services/api";
 import { Comments } from "../../components/molecules/Comment";

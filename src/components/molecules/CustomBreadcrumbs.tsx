@@ -20,7 +20,6 @@ export default function NextBreadcrumbs({
   getDefaultTextGenerator?: (path: string) => string;
   getTextGenerator?: (param: any, query: any) => null;
 }) {
-  // Gives us ability to load the current route details
   const router = useRouter();
 
   const breadcrumbs = useMemo(
@@ -30,7 +29,6 @@ export default function NextBreadcrumbs({
 
       const crumblist = asPathNestedRoutes.map(
         (subpath: string, idx: number) => {
-          //konwersja z [] do bez
           const param = pathnameNestedRoutes[idx]
             .replace("[", "")
             .replace("]", "");
@@ -83,7 +81,6 @@ const Crumb = ({
     if (!Boolean(textGenerator)) {
       return;
     }
-    // Run the text generator and set the text again
     const finalText = await textGenerator();
     setText(finalText);
   };
@@ -92,12 +89,10 @@ const Crumb = ({
     crumbText();
   }, [textGenerator]);
 
-  // The last crumb is rendered as normal text since we are already on the page
   if (last) {
     return <Typography>{text}</Typography>;
   }
 
-  // All other crumbs will be rendered as links that can be visited
   return (
     <Typography>
       <Link href={href}>

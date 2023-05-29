@@ -2,12 +2,8 @@
 
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    // "./src/pages/**/*.{js,ts,jsx,tsx}",
-    // "./src/components/**/*.{js,ts,jsx,tsx}",
-  ],
-  important: "#__next", //#root
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  important: "#__next",
   theme: {
     extend: {
       height: {
@@ -45,7 +41,6 @@ module.exports = {
         global: "url('/star-wars-background.png')",
       },
       colors: {
-        // "#FFE81F",
         yellow: "#EEDB00",
         black: "#000000",
         gray: "#C7C7C7",

@@ -3,12 +3,8 @@ import { useMemo } from "react";
 import { ReactNode } from "react";
 import { Header } from "./Header";
 import { useRouter } from "next/router";
-import { GoBack } from "../atoms/GoBack";
-import { PageLoader } from "../atoms/PageLoader";
-import { useLoading } from "../../hooks/useLoading";
 
 export default function Layout({ children }: { children: ReactNode }) {
-  const loadingStatus = useLoading();
   const router = useRouter();
   const routeName = router.pathname.split("/")[1];
   const title = useMemo(
@@ -27,13 +23,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
       <div className="  h-screen flex flex-col text-yellow">
         <Header />
-        {/* {loadingStatus === true ? (
-          <div className="div-wrapCenter">
-            <PageLoader open={loadingStatus}></PageLoader>
-          </div>
-        ) : ( */}
         <main className=" h-screen flex flex-col">{children}</main>
-        {/* )} */}
       </div>
     </>
   );

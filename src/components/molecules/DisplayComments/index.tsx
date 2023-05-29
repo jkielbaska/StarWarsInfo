@@ -25,13 +25,3 @@ export const DisplayComments = ({ filmId }: { filmId: number }) => {
     </>
   );
 };
-
-// const newComment = async (commentsCollection: any, comment: any) => {
-//   await commentsCollection.add(comment);
-// };
-
-{
-  /* <button className="font-galaxyregular text-xl pt-5 ">
-Write Comment
-</button> */
-}

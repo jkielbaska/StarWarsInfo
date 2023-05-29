@@ -21,5 +21,3 @@ export const PhotoIndex = <T extends unknown>({
     </>
   );
 };
-
-//https://medium.com/edonec/creating-a-generic-component-with-react-typescript-2c17f8c4386e

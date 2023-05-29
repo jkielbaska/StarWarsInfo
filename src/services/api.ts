@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { TCharacter, Paginated } from "../types/tCharacterResponse";
 import { MovieResponse } from "../types/tMovieResponse";
-// import type { Movie, Character } from "../types/types";
 
 const apiBase = "https://swapi.dev/api";
 export const api = axios.create({
@@ -17,7 +16,6 @@ export const getFilms = async () => {
 export const getCharacterById = async (id: string) => {
   try {
     const response = await api.get<TCharacter>(`/people/${id}/`);
-    // zapiac sie na kod 404
     if (response.statusText === "Not Found") {
       throw new Error("Not Found");
     } else return response.data;

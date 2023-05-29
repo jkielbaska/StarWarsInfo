@@ -14,12 +14,10 @@
   }
   @font-face {
     font-family: "SfDistantGalaxy-0l3d";
-    /* font-weight: 400; */
     src: url("/SfDistantGalaxy-0l3d.ttf") format("truetype");
   }
   @font-face {
     font-family: "SfDistantGalaxyAltoutlineItalic-ZJDZ";
-    /* font-weight: 400; */
     src: url("/SfDistantGalaxyAltoutlineItalic-ZJDZ.ttf") format("truetype");
   }
   @font-face {

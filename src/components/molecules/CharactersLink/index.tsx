@@ -31,24 +31,3 @@ export const CharactersLink = ({
     </div>
   );
 };
-
-{
-  /* <ol>
-        {characters.map((character: Character) =>
-          character.detail === "Not found" ? (
-            <p>Character not found. Something went wrong</p>
-          ) : typeof character === undefined ? (
-            <p>something went wrong</p>
-          ) : (
-            <li key={character.url}>
-              <Link
-                href={`/characters/${character.url.split("/")[5]}`}
-                prefetch={false}
-              >
-                <a className="hover:text-dgray">{character.name}</a>
-              </Link>
-            </li>
-          )
-        )}
-      </ol> */
-}
